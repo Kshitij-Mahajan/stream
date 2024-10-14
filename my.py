@@ -14,7 +14,7 @@ import os
 HF_TOKEN = "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"
 os.environ['PINECONE_API_KEY'] = '73e13e27-461e-4b8d-973c-44c08e37ec2d'
 os.environ["TOKENIZERS_PARALLELISM"] = "false"  # Disable parallelism warnings
-
+os.environ["KEY_NEW"]= KEY_NEW
 # Streamlit UI configuration
 st.set_page_config(page_title="Mangesh+Aastha", page_icon="👨‍❤️‍👩")
 
@@ -36,7 +36,7 @@ def load_llm():
     return ChatOpenAI(
         temperature=0.7,
         model_name='gpt-3.5-turbo',
-        openai_api_key="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"
+        openai_api_key= KEY_NEW
     )
 
 # Initialize models
