@@ -14,7 +14,7 @@ import os
 HF_TOKEN = "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"
 os.environ['PINECONE_API_KEY'] = '73e13e27-461e-4b8d-973c-44c08e37ec2d'
 os.environ["TOKENIZERS_PARALLELISM"] = "false"  # Disable parallelism warnings
-os.environ["KEY_NEW"]= KEY_NEW
+KEY_NEW=st.secrets['KEY_NEW']
 # Streamlit UI configuration
 st.set_page_config(page_title="Mangesh+Aastha", page_icon="👨‍❤️‍👩")
 
