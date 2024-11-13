@@ -7,3 +7,4 @@ langchain_community
 langchain_pinecone 
 openai
 torch
+huggingface_hub==0.25.0
