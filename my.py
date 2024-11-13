@@ -9,11 +9,8 @@ from langchain.prompts.chat import (
 )
 from pinecone import Pinecone
 import os
-from InstructorEmbedding import INSTRUCTOR
 import torch
-import transformers
-from transformers import AutoTokenizer, AutoModelForCausalLM
-# Set up API keys and environment variables
+
 HF_TOKEN = "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"
 os.environ['PINECONE_API_KEY'] = '73e13e27-461e-4b8d-973c-44c08e37ec2d'
 os.environ["TOKENIZERS_PARALLELISM"] = "false"  # Disable parallelism warnings
